@@ -1,0 +1,157 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activityLayout"
+    style="@style/bg_container"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:keepScreenOn="true"
+    tools:context="ca.concordia.sensortag.weather.WeatherStationActivity" >
+
+    <LinearLayout
+        android:id="@+id/boxContainer"
+        style="@style/box_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/layout_temp"
+            style="@style/box_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|top"
+            android:gravity="bottom" >
+
+            <TextView
+                android:id="@+id/value_temp"
+                style="@style/text_temp_data"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:text="27.4" />
+
+            <TextView
+                android:id="@+id/unit_temp"
+                style="@style/text_temp_unit"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:text="@string/temperature_c_unit" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/header_humi"
+            style="@style/text_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/humidity_title"
+            android:textColor="#3300CC" />
+
+        <LinearLayout
+            android:id="@+id/layout_humi"
+            style="@style/box_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|top" >
+
+            <TextView
+                android:id="@+id/value_humi"
+                style="@style/text_humi_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:text="75.0" />
+
+            <TextView
+                android:id="@+id/unit_humi"
+                style="@style/text_humi_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="@string/humidity_unit" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Temperature and Humidity Alert Points"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="High and Low Temperature Alert Points"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <EditText
+            android:id="@+id/max_temp_tb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="High temperature alert point"
+            android:inputType="numberSigned" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/low_temp_tb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Low temperature alert point"
+            android:inputType="numberSigned" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="High and Low Humidity Alert Points"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <EditText
+            android:id="@+id/high_humidity_tb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="High humidity alert point"
+            android:inputType="numberSigned" />
+
+        <EditText
+            android:id="@+id/low_humidity_tb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Low humidity alert point"
+            android:inputType="numberSigned" />
+
+        <Button
+            android:id="@+id/notes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notes" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/temperature_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/boxContainer"
+        android:paddingLeft="10dp"
+        android:text="Temperature"
+        android:textColor="#3300CC"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/checklistButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/boxContainer"
+        android:layout_alignRight="@+id/boxContainer"
+        android:layout_marginBottom="23dp"
+        android:text="CheckList" />
+
+</RelativeLayout>

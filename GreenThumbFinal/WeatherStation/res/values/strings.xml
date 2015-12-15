@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Application strings -->
+    <string name="app_name">GreenThumb</string>
+    <string name="action_settings">Preferences</string>
+    <string name="temperature_title">Temperature</string>
+    <string name="barometer_title">Pressure</string>
+    <string name="humidity_title">Humidity</string>
+    <string name="temperature_c_unit">°C</string>
+    <string name="temperature_f_unit">°F</string>
+    <string name="barometer_kpa_unit">kPa</string>
+    <string name="barometer_mbar_unit">mBar</string>
+    <string name="barometer_inhg_unit">inHg</string>
+    <string name="humidity_unit">%</string>
+
+    <!-- Preference strings -->
+    <string name="pref_temp_unit">Temperature unit</string>
+    <string name="pref_baro_unit">Pressure unit</string>
+    <string name="title_activity_notes_list">Notes List</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_add_new_note">Add New Note</string>
+    <string name="title_activity_update_delete">Update/Delete Notes</string>
+    <string name="title_activity_check_list">Checklist</string>
+    <string name="title_activity_open_check_list">Open Checklist</string>
+    <string name="title_activity_save_check_list">New Checklist</string>
+    <string name="title_activity_update_delete_activity2">Update/Delete Checklist</string>
+
+</resources>
